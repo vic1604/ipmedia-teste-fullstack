@@ -8,9 +8,9 @@
 
 ## 2. Frontend
 
-- [ ] 2.1 Criar `frontend/` com React, TypeScript, Vite e Vitest; verificar que a aplicação e a configuração de testes iniciam.
-- [ ] 2.2 Implementar tela municipal com autocomplete nome + UF e indicadores agregados; verificar seleção por `cd_mun` e estados de carregamento/resultado com testes Vitest.
-- [ ] 2.3 Implementar tela estadual com totais e ranking paginado; verificar seleção de UF, mudança de página e apresentação dos resultados com testes Vitest.
+- [x] 2.1 Criar `frontend/` com React, TypeScript, Vite e Vitest; verificar que a aplicação e a configuração de testes iniciam.
+- [x] 2.2 Implementar tela municipal com autocomplete nome + UF e indicadores agregados; verificar seleção por `cd_mun` e estados de carregamento/resultado com testes Vitest.
+- [x] 2.3 Implementar tela estadual com totais e ranking paginado; verificar seleção de UF, mudança de página e apresentação dos resultados com testes Vitest.
 
 ## 3. Docker e documentação
 
