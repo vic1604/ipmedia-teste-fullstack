@@ -2,9 +2,9 @@
 
 ## 1. Backend e dados
 
-- [ ] 1.1 Criar `backend/` com Node.js, TypeScript, Fastify, better-sqlite3 e Vitest; implementar cópia de `censo.sqlite` para `.data/`, índices idempotentes e conexão de consulta somente leitura; verificar com testes que a origem permanece intacta e os índices existem na cópia.
-- [ ] 1.2 Implementar autocomplete e agregados municipais conforme a spec; verificar com testes Vitest códigos repetidos, exclusão de `cd_mun = '.'`, população de `setor`, sexo de `demografia` e situação não informada.
-- [ ] 1.3 Implementar totais estaduais e ranking por densidade com paginação estável; verificar com testes Vitest população, área incluindo o município especial, ordenação, desempate e navegação entre páginas.
+- [x] 1.1 Criar `backend/` com Node.js, TypeScript, Fastify, better-sqlite3 e Vitest; implementar cópia de `censo.sqlite` para `.data/`, índices idempotentes e conexão de consulta somente leitura; verificar com testes que a origem permanece intacta e os índices existem na cópia.
+- [x] 1.2 Implementar autocomplete e agregados municipais conforme a spec; verificar com testes Vitest códigos repetidos, exclusão de `cd_mun = '.'`, população de `setor`, sexo de `demografia` e situação não informada.
+- [x] 1.3 Implementar totais estaduais e ranking por densidade com paginação estável; verificar com testes Vitest população, área incluindo o município especial, ordenação, desempate e navegação entre páginas.
 
 ## 2. Frontend
 
