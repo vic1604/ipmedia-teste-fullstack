@@ -16,4 +16,4 @@
 
 - [x] 3.1 Criar `.gitignore` para `.data/` e Docker Compose para montar `censo.sqlite` somente leitura, persistir a cópia de trabalho e iniciar backend e frontend; verificar `git check-ignore .data/censo.sqlite` e `docker compose config`.
 - [x] 3.2 Ajustar builds e inicialização para que `docker compose up` em checkout limpo disponibilize as duas telas sem preparação manual; verificar a cópia e os índices no volume e testar os fluxos integrados.
-- [ ] 3.3 Criar README com instalação, execução, decisões técnicas e atualização da cópia ignorada; verificar que os comandos documentados funcionam a partir de checkout limpo.
+- [x] 3.3 Criar README com instalação, execução, decisões técnicas e atualização da cópia ignorada; verificar que os comandos documentados funcionam a partir de checkout limpo.
