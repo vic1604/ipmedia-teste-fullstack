@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      PORT: 3000
+      CENSO_SOURCE_PATH: /data/source/censo.sqlite
+      CENSO_WORKING_PATH: /data/work/censo.sqlite
+    ports:
+      - "3000:3000"
+    volumes:
+      - type: bind
+        source: ./censo.sqlite
+        target: /data/source/censo.sqlite
+        read_only: true
+      - censo_working_data:/data/work
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/estados').then((response) => process.exit(response.ok ? 0 : 1)).catch(() => process.exit(1))"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+
+volumes:
+  censo_working_data:
